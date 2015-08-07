@@ -1,0 +1,46 @@
+{# andrewdbooth/templates/home.html #}
+
+{% import "macros.html" as macros %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="{{url_for('.static', filename='lib/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('.static', filename='style.css')}}">
+
+    <!-- Custom -->
+    <link rel="shortcut icon" href="{{url_for('.static', filename='img/favicon.jpg')}}">
+    <title>The Homepage of ADB</title>
+</head>
+<body>
+    <div class="container main">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="{{url_for('.static', filename='img/favicon.jpg')}}" id="profile_image" class="img-responsive">
+                <div>
+                    <table id="navigation-table" class="table table-hover table-condensed table-borderless">
+                        {% for e in content_page_names %}
+                            {{macros.render_navigation_element(e)}}
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                <p>
+                    Content
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="{{url_for('.static', filename='lib/jquery-1.11.3.min.js')}}"></script>
+<script type="text/javascript" src="{{url_for('.static', filename='lib/bootstrap.min.js')}}"></script>
+<script type="text/javascript" src="{{url_for('.static', filename='lib/script.js')}}"></script>
+</html>

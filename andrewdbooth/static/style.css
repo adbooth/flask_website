@@ -1,0 +1,18 @@
+body {
+    padding-top: 50px;
+}
+
+.main {
+    max-width: 800px;
+}
+
+.table-borderless tbody tr td {
+    border: none;
+}
+
+.navigation-row {
+    cursor: pointer;
+}
+.navigation-text {
+    transform: translate(0, 25%);
+}
