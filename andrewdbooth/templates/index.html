@@ -21,21 +21,19 @@
         <div class="row">
             <div class="col-sm-4">
                 <img src="{{url_for('.static', filename='img/favicon.jpg')}}" id="profile_image" class="img-responsive">
-                <div>
-                    <table id="navigation-table" class="table table-hover table-condensed table-borderless">
-                        {% for name in content.page_name_list %}
-                            <tr id="{{name}}_navigation" class="navigation-row">
-                                <td>
-                                    <p class="navigation-text">{{name|title}}</p>
-                                </td>
-                            </tr>
-                        {% endfor %}
-                    </table>
-                </div>
+                <table id="navigation-table" class="table table-hover table-condensed table-borderless">
+                    {% for name in content.page_name_list %}
+                        <tr id="{{name}}_navigation" class="navigation-row{% if not loop.index0 %} bg-info{% endif %}">
+                            <td>
+                                <p class="navigation-text">{{name|title}}</p>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </table>
             </div>
 
             {% for name in content.page_name_list %}
-                <div id="{{name}}" class="col-sm-8 hidden">{% include name ~ '.html' %}</div>
+                <div id="{{name}}" class="col-sm-8 page-div{% if loop.index0 %} hidden{% endif %}">{% include name ~ '.html' %}</div>
             {% endfor %}
         </div>
     </div>

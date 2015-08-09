@@ -1,3 +1,5 @@
 {# andrewdbooth/templates/resume.html #}
 
-<object type="application/pdf" data="{{url_for('.static', filename='resume.pdf')}}" width="300" height="300"></object>
+<a href="{{url_for('.static', filename='content/resume.pdf')}}">
+    <img src="{{url_for('.static', filename='content/resume.png')}}" class="img-responsive">
+</a>
