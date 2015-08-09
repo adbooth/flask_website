@@ -4,7 +4,7 @@ from flask import json, Markup
 from markdown import markdown
 from os.path import join
 
-DEBUG = False
+DEBUG = True
 
 static_path = 'andrewdbooth/static/'
 content_path = join(static_path, 'content')
