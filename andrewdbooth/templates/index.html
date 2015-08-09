@@ -1,6 +1,4 @@
-{# andrewdbooth/templates/home.html #}
-
-{% import "macros.html" as macros %}
+{# andrewdbooth/templates/index.html #}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,22 +23,24 @@
                 <img src="{{url_for('.static', filename='img/favicon.jpg')}}" id="profile_image" class="img-responsive">
                 <div>
                     <table id="navigation-table" class="table table-hover table-condensed table-borderless">
-                        {% for e in content_page_names %}
-                            {{macros.render_navigation_element(e)}}
+                        {% for name in content.page_name_list %}
+                            <tr id="{{name}}_navigation" class="navigation-row">
+                                <td>
+                                    <p class="navigation-text">{{name|title}}</p>
+                                </td>
+                            </tr>
                         {% endfor %}
                     </table>
                 </div>
             </div>
 
-            <div class="col-sm-8">
-                <p>
-                    Content
-                </p>
-            </div>
+            {% for name in content.page_name_list %}
+                <div id="{{name}}" class="col-sm-8 hidden">{% include name ~ '.html' %}</div>
+            {% endfor %}
         </div>
     </div>
+    <script type="text/javascript" src="{{url_for('.static', filename='lib/jquery-1.11.3.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('.static', filename='lib/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('.static', filename='script.js')}}"></script>
 </body>
-<script type="text/javascript" src="{{url_for('.static', filename='lib/jquery-1.11.3.min.js')}}"></script>
-<script type="text/javascript" src="{{url_for('.static', filename='lib/bootstrap.min.js')}}"></script>
-<script type="text/javascript" src="{{url_for('.static', filename='lib/script.js')}}"></script>
 </html>
