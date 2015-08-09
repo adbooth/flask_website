@@ -7,13 +7,17 @@ body {
     max-width: 800px;
 }
 
-#profile_image {
+.profile-image {
     cursor: pointer;
 }
+
+/* Navigation table stuff */
 .table-borderless tbody tr td {
     border: none;
 }
-
+.bg-selected {
+    background-color: WhiteSmoke;
+}
 .navigation-row {
     cursor: pointer;
 }

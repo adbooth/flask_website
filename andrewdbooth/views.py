@@ -1,13 +1,7 @@
 # andrewdbooth/views.py
 
-from andrewdbooth import app
+from andrewdbooth import app, content
 from flask import redirect, render_template, url_for
-
-content = {}
-content['page_name_list'] = []
-for name in app.config['CONTENT_PAGE_NAMES']:
-    content['page_name_list'].append(name)
-    content[name] = app.config[name.upper()]
 
 @app.route('/')
 def index():

@@ -6,20 +6,25 @@ var prof_pics = [
 ]
 
 $(function() {
+    // Add navigation functionality to rows
     $('.navigation-row').attr('onclick', 'show_page(this)');
-    $('#profile_image').click(function() {
+
+    // Add prof-pic swap functionality
+    $('.profile-image').click(function() {
         var index = Math.floor(Math.random() * prof_pics.length);
         var new_src = prof_pics[index];
-        prof_pics[index] = $('#profile_image').attr('src');
-        $('#profile_image').attr('src', new_src);
+        prof_pics[index] = $('.profile-image').attr('src');
+        $('.profile-image').attr('src', new_src);
     });
 });
 
 function show_page(elem) {
-    $('.navigation-row').removeClass('bg-info');
+    // Hide all pages
+    $('.navigation-row').removeClass('bg-selected');
     $('.page-div').addClass('hidden');
 
-    $(elem).addClass('bg-info');
+    // Show make corresponding page
+    $(elem).addClass('bg-selected');
     var target = $(elem).attr('id').replace('_navigation', '');
     $('#' + target).removeClass('hidden');
 }

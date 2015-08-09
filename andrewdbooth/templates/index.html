@@ -14,16 +14,16 @@
 
     <!-- Custom -->
     <link rel="shortcut icon" href="{{url_for('.static', filename='img/favicon.jpg')}}">
-    <title>The Homepage of ADB</title>
+    <title>The Site of ADB</title>
 </head>
 <body>
     <div class="container main">
         <div class="row">
             <div class="col-sm-4">
-                <img src="{{url_for('.static', filename='img/favicon.jpg')}}" id="profile_image" class="img-responsive">
+                <img src="{{url_for('.static', filename='img/favicon.jpg')}}" class="img-responsive profile-image">
                 <table id="navigation-table" class="table table-hover table-condensed table-borderless">
                     {% for name in content.page_name_list %}
-                        <tr id="{{name}}_navigation" class="navigation-row{% if not loop.index0 %} bg-info{% endif %}">
+                        <tr id="{{name}}_navigation" class="navigation-row{% if not loop.index0 %} bg-selected{% endif %}">
                             <td>
                                 <p class="navigation-text">{{name|title}}</p>
                             </td>
