@@ -1,2 +1,10 @@
-
-{{content.projects}}
+<table class="table table-borderless table-flush">
+    {% for item in content.projects %}
+        {% if loop.index0 % 3 == 0 %}<tr>{% endif %}
+        <td class="img-wrapper">
+            <img src="{{url_for('.static', filename='img/projects_images/' ~ item.name ~ '.jpg')}}" class="img-responsive img-project">
+        </td>
+        {% if loop.index0-2 % 3 == 0 %}</tr>{% endif %}
+    {% endfor %}
+    </tr>
+</table>

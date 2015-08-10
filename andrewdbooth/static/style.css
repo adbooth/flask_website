@@ -10,6 +10,12 @@ body {
 .profile-image {
     cursor: pointer;
 }
+.name-div {
+    cursor: pointer;
+}
+.name-header {
+    text-align: center;
+}
 
 /* Navigation table stuff */
 .table-borderless tbody tr td {
@@ -23,4 +29,19 @@ body {
 }
 .navigation-text {
     transform: translate(0, 25%);
+}
+
+/* Projects table stuff */
+.table-flush tbody tr td {
+    padding: 0;
+}
+.img-wrapper {
+}
+.img-project {
+    width: 1000px;
+    cursor: pointer;
+    -webkit-filter: grayscale(30%);
+}
+.img-blurred {
+    -webkit-filter: grayscale(75%) blur(1px);
 }

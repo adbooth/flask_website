@@ -1,4 +1,4 @@
 # config.py
 
 DEBUG = True
-CONTENT_PAGE_NAMES = ['about', 'blog', 'resume', 'projects']
+CONTENT_PAGE_NAMES = ['about', 'projects', 'blog', 'resume']

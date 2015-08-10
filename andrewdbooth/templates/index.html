@@ -20,7 +20,10 @@
     <div class="container main">
         <div class="row">
             <div class="col-sm-4">
-                <img src="{{url_for('.static', filename='img/favicon.jpg')}}" class="img-responsive profile-image">
+                <img src="{{url_for('.static', filename='img/Chimney_prof_pic.jpg')}}" class="img-responsive profile-image">
+                <div class="name-div">
+                    <h2 class="name-header">Andrew Booth</h2>
+                </div>
                 <table id="navigation-table" class="table table-hover table-condensed table-borderless">
                     {% for name in content.page_name_list %}
                         <tr id="{{name}}_navigation" class="navigation-row{% if not loop.index0 %} bg-selected{% endif %}">

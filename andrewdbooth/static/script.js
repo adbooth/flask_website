@@ -1,5 +1,5 @@
 var prof_pics = [
-    '/static/img/Chimney_prof_pic.jpg',
+    '/static/img/favicon.jpg',
     '/static/img/Killington_prof_pic.jpg',
     '/static/img/Niagara_prof_pic.jpg',
     '/static/img/Oozefest_prof_pic.jpg'
@@ -16,6 +16,21 @@ $(function() {
         prof_pics[index] = $('.profile-image').attr('src');
         $('.profile-image').attr('src', new_src);
     });
+
+    $('.name-div').click(function() {
+        show_page(document.getElementById('about_navigation'));
+    });
+
+    // Add project image hover functionality
+    $('.img-project').hover(
+        function() {
+            $('.img-project').addClass('img-blurred');
+            $(this).removeClass('img-blurred');
+        },
+        function() {
+            $('.img-project').removeClass('img-blurred');
+        }
+    );
 });
 
 function show_page(elem) {
