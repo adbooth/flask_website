@@ -15,10 +15,15 @@
     <!-- Custom -->
     <link rel="shortcut icon" href="{{url_for('.static', filename='img/favicon.jpg')}}">
     <title>The Site of ADB</title>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
     <div class="container main">
         <div class="row">
+            <!-- Navigation column -->
             <div class="col-sm-4">
                 <img src="{{url_for('.static', filename='img/Chimney_prof_pic.jpg')}}" class="img-responsive profile-image">
                 <div class="name-div">
@@ -26,7 +31,7 @@
                 </div>
                 <table id="navigation-table" class="table table-hover table-condensed table-borderless">
                     {% for name in content.page_name_list %}
-                        <tr id="{{name}}_navigation" class="navigation-row{% if not loop.index0 %} bg-selected{% endif %}">
+                        <tr id="{{name}}_navigation" class="navigation-row">
                             <td>
                                 <p class="navigation-text">{{name|title}}</p>
                             </td>
@@ -35,9 +40,17 @@
                 </table>
             </div>
 
+            <!-- Content columns -->
             {% for name in content.page_name_list %}
-                <div id="{{name}}" class="col-sm-8 page-div{% if loop.index0 %} hidden{% endif %}">{% include name ~ '.html' %}</div>
+                <div id="{{name}}" class="col-sm-8 page-div hidden">{% include name ~ '.html' %}</div>
             {% endfor %}
+        </div>
+
+        <!-- Footer -->
+        <div class="container main footer">
+            <p class="text-muted">
+                Designed by <a href="https://twitter.com/broothie">me</a>, powered by <a href="http://flask.pocoo.org/">Flask</a> + <a href="http://getbootstrap.com/">Bootstrap</a>
+            </p>
         </div>
     </div>
     <script type="text/javascript" src="{{url_for('.static', filename='lib/jquery-1.11.3.min.js')}}"></script>

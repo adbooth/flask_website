@@ -2,46 +2,57 @@
     "projects":[
         {
             "name": "SMBS",
+            "caption":"SMBS",
             "link": ""
         },
         {
             "name": "site",
+            "caption":"This Website",
             "link": ""
         },
         {
             "name": "welding",
+            "caption":"Trailer Weld",
             "link": ""
         },
         {
             "name": "ARM",
+            "caption":"ARM Bomberman",
             "link": ""
         },
         {
             "name": "blinds",
+            "caption":"Auto Blinds",
             "link": ""
         },
         {
             "name": "ALU",
+            "caption":"Verilog ALU",
             "link": ""
         },
         {
             "name": "drone",
+            "caption":"Drone Sim",
             "link": ""
         },
         {
             "name": "MIPS",
+            "caption":"MIPS Divison",
             "link": ""
         },
         {
             "name": "oldsite",
+            "caption":"Old Website",
             "link": ""
         },
         {
             "name": "RPi",
+            "caption":"Raspbian LAMP Server",
             "link": ""
         },
         {
             "name": "ONESmart",
+            "caption":"ONESmart",
             "link": ""
         }
     ]

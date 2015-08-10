@@ -1,11 +1,19 @@
+// Make data structure for prof_pic URLs
 var prof_pics = [
     '/static/img/favicon.jpg',
     '/static/img/Killington_prof_pic.jpg',
     '/static/img/Niagara_prof_pic.jpg',
+    // '/static/img/Graduation_prof_pic.jpg',
     '/static/img/Oozefest_prof_pic.jpg'
 ]
 
 $(function() {
+    // Start page on about page
+    show_home();
+
+    // Add new tab link functionality
+    $('a').attr('target', '_blank');
+
     // Add navigation functionality to rows
     $('.navigation-row').attr('onclick', 'show_page(this)');
 
@@ -17,18 +25,27 @@ $(function() {
         $('.profile-image').attr('src', new_src);
     });
 
-    $('.name-div').click(function() {
-        show_page(document.getElementById('about_navigation'));
-    });
+    $('.name-div').click(show_home);
 
     // Add project image hover functionality
     $('.img-project').hover(
         function() {
-            $('.img-project').addClass('img-blurred');
-            $(this).removeClass('img-blurred');
+            $(this).addClass('img-blurred');
+            $(this).siblings().removeClass('hidden');
         },
         function() {
-            $('.img-project').removeClass('img-blurred');
+            $(this).siblings().addClass('hidden');
+            $(this).removeClass('img-blurred');
+        }
+    );
+    $('.img-text').hover(
+        function() {
+            $(this).removeClass('hidden');
+            $(this).siblings().addClass('img-blurred');
+        },
+        function() {
+            $(this).siblings().removeClass('img-blurred');
+            $(this).addClass('hidden');
         }
     );
 });
@@ -42,4 +59,13 @@ function show_page(elem) {
     $(elem).addClass('bg-selected');
     var target = $(elem).attr('id').replace('_navigation', '');
     $('#' + target).removeClass('hidden');
+    $('title').text('The ' + capitalize(target) + ' of ADB')
+}
+
+function show_home() {
+    show_page(document.getElementById('home_navigation'));
+}
+
+function capitalize(s) {
+    return s[0].toUpperCase() + s.slice(1);
 }

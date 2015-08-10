@@ -1,12 +1,19 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
     font-family: "Lucida Console", Monaco, monospace;
     padding-top: 50px;
+    margin-bottom: 50px;
 }
 
 .main {
     max-width: 800px;
 }
 
+/* Profile and header CSS */
 .profile-image {
     cursor: pointer;
 }
@@ -17,7 +24,7 @@ body {
     text-align: center;
 }
 
-/* Navigation table stuff */
+/* Navigation table CSS */
 .table-borderless tbody tr td {
     border: none;
 }
@@ -31,17 +38,39 @@ body {
     transform: translate(0, 25%);
 }
 
-/* Projects table stuff */
+/* Projects table CSS */
 .table-flush tbody tr td {
     padding: 0;
 }
 .img-wrapper {
+    position: relative;
 }
 .img-project {
     width: 1000px;
     cursor: pointer;
-    -webkit-filter: grayscale(30%);
+    -webkit-filter: grayscale(40%);
+}
+.img-text {
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 26px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 .img-blurred {
-    -webkit-filter: grayscale(75%) blur(1px);
+    -webkit-filter: brightness(65%) grayscale(0%) blur(1px);
+}
+
+/* Footer CSS */
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+}
+.footer p {
+    transform: translate(0, 15px);
 }
