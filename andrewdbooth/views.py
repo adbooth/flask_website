@@ -6,8 +6,3 @@ from flask import redirect, render_template, url_for
 @app.route('/')
 def index():
     return render_template('index.html', content=content)
-
-@app.route('/project')
-@app.route('/project/<name>')
-def post():
-    return
