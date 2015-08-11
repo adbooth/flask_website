@@ -44,6 +44,9 @@
             {% for name in content.page_name_list %}
                 <div id="{{name}}" class="col-sm-8 page-div hidden">{% include name ~ '.html' %}</div>
             {% endfor %}
+            {% for name, markup in content.project_files.iteritems() %}
+                <div id="{{name}}_project" class="col-sm-8 page-div hidden">{{markup}}</div>
+            {% endfor %}
         </div>
 
         <!-- Footer -->

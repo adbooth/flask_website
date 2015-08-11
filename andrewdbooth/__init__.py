@@ -12,7 +12,7 @@ app.config.from_object('config')
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 APP_STATIC = os.path.join(APP_ROOT, 'static')
 APP_CONTENT = os.path.join(APP_STATIC, 'content')
-APP_IMAGE = os.path.join(APP_ROOT, 'img')
+APP_PROJECT_FILES = os.path.join(APP_CONTENT, 'project_files')
 
 # Make content object
 content = {}
@@ -26,8 +26,12 @@ with open(os.path.join(APP_CONTENT, 'about.md')) as f:
 content['blog'] = 'blog here'
 
 # Make projects object for content object
-# content['projects'] = {}
 with open(os.path.join(APP_CONTENT, 'projects.json')) as f:
     content['projects'] = json.load(f)['projects']
+
+content['project_files'] = {}
+for filename in os.listdir(APP_PROJECT_FILES):
+    with open(os.path.join(APP_PROJECT_FILES, filename)) as f:
+        content['project_files'][filename.replace('.md', '')] = Markup(markdown(f.read()))
 
 import andrewdbooth.views

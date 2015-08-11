@@ -3,9 +3,15 @@
 <table class="table table-borderless table-flush">
     {% for item in content.projects %}
         {% if loop.index0 % 3 == 0 %}<tr>{% endif %}
-        <td class="img-wrapper">
-            <img src="{{url_for('.static', filename='img/projects_images/' ~ item.name ~ '.jpg')}}" class="img-responsive img-project">
-            <p class='img-text hidden'>{{item.caption}}</p>
+        <td id="{{item.name}}_project_image" {% if not item.link %} onclick="show_stage(this)" {% endif %}class="img-wrapper">
+            {% if item.link %}
+                <a href="{{item.link}}">
+            {% endif %}
+                <img src="{{url_for('.static', filename='img/thumbs/' ~ item.name ~ '.jpg')}}" class="img-responsive img-project">
+                <p class='img-text hidden'>{{item.caption}}</p>
+            {% if item.link %}
+                </a>
+            {% endif %}
         </td>
         {% if loop.index0-2 % 3 == 0 %}</tr>{% endif %}
     {% endfor %}

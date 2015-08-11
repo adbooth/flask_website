@@ -7,7 +7,7 @@ from flask import redirect, render_template, url_for
 def index():
     return render_template('index.html', content=content)
 
-@app.route('/post')
-@app.route('/post/<postname>')
+@app.route('/project')
+@app.route('/project/<name>')
 def post():
-    return 'post here'
+    return

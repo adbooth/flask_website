@@ -59,11 +59,20 @@ function show_page(elem) {
     $(elem).addClass('bg-selected');
     var target = $(elem).attr('id').replace('_navigation', '');
     $('#' + target).removeClass('hidden');
-    $('title').text('The ' + capitalize(target) + ' of ADB')
+    $('title').text('The ' + capitalize(target) + ' of ADB');
 }
 
 function show_home() {
     show_page(document.getElementById('home_navigation'));
+}
+
+function show_stage(elem) {
+    $('.navigation-row').removeClass('bg-selected');
+    $('.page-div').addClass('hidden');
+
+    var target = $(elem).attr('id').replace('_image', '');
+    $('#' + target).removeClass('hidden');
+    $('title').text('A Project of ADB');
 }
 
 function capitalize(s) {
