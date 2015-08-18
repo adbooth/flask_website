@@ -1,1 +1,1 @@
-web: gunicorn andrewdbooth:app --log-file=-
+web: gunicorn andrewdbooth:app -b localhost:8000

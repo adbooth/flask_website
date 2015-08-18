@@ -12,6 +12,10 @@ body {
 .main {
     max-width: 800px;
 }
+.table-borderless tbody tr td {
+    border: none;
+}
+
 
 /* Profile and header CSS */
 .profile-image {
@@ -22,10 +26,6 @@ body {
 }
 .name-div h2 {
     text-align: center;
-}
-
-.table-borderless tbody tr td {
-    border: none;
 }
 
 /* Navigation table CSS */
