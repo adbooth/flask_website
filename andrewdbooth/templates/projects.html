@@ -3,12 +3,12 @@
 <table class="table table-borderless table-flush">
     {% for item in content.projects %}
         {% if loop.index0 % 3 == 0 %}<tr>{% endif %}
-        <td id="{{item.name}}_project_image" {% if not item.link %} onclick="show_stage(this)" {% endif %}class="img-wrapper">
+        <td id="{{item.name}}_project_image" class="project-thumb-wrapper"{% if not item.link %} onclick="show_stage(this)" {% endif %}>
             {% if item.link %}
                 <a href="{{item.link}}">
             {% endif %}
-                <img src="{{url_for('.static', filename='img/thumbs/' ~ item.name ~ '.jpg')}}" class="img-responsive img-project">
-                <p class='img-text hidden'>{{item.caption}}</p>
+                <img src="{{url_for('.static', filename='img/thumbs/' ~ item.name ~ '.jpg')}}" class="img-responsive project-thumb">
+                <p class='project-text hidden'>{{item.caption}}</p>
             {% if item.link %}
                 </a>
             {% endif %}

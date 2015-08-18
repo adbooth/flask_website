@@ -1,6 +1,6 @@
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
@@ -20,21 +20,22 @@ body {
 .name-div {
     cursor: pointer;
 }
-.name-header {
+.name-div h2 {
     text-align: center;
 }
 
-/* Navigation table CSS */
 .table-borderless tbody tr td {
     border: none;
 }
+
+/* Navigation table CSS */
 .bg-selected {
     background-color: WhiteSmoke;
 }
 .navigation-row {
     cursor: pointer;
 }
-.navigation-text {
+.navigation-row p {
     transform: translate(0, 25%);
 }
 
@@ -42,15 +43,15 @@ body {
 .table-flush tbody tr td {
     padding: 0;
 }
-.img-wrapper {
+.project-thumb-wrapper {
     position: relative;
 }
-.img-project {
-    width: 1000px;
+.project-thumb {
+    width: 250px;
     cursor: pointer;
     -webkit-filter: grayscale(40%);
 }
-.img-text {
+.project-text {
     cursor: pointer;
     z-index: 100;
     position: absolute;

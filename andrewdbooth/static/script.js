@@ -28,7 +28,7 @@ $(function() {
     $('.name-div').click(show_home);
 
     // Add project image hover functionality
-    $('.img-project').hover(
+    $('.project-thumb').hover(
         function() {
             $(this).addClass('img-blurred');
             $(this).siblings().removeClass('hidden');
@@ -38,7 +38,7 @@ $(function() {
             $(this).removeClass('img-blurred');
         }
     );
-    $('.img-text').hover(
+    $('.project-text').hover(
         function() {
             $(this).removeClass('hidden');
             $(this).siblings().addClass('img-blurred');
