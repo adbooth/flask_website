@@ -1,0 +1,77 @@
+/* Global CSS */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Lucida Console", Monaco, monospace;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+#theater {
+    max-width: 800px;
+}
+.table-borderless tbody tr td {
+    border: none;
+}
+
+
+/* Pillar CSS */
+#mugshot {
+    cursor: pointer;
+}
+#nameplate {
+    cursor: pointer;
+}
+#nameplate h2 {
+    text-align: center;
+}
+
+/* Navigation table CSS */
+.bg-selected {
+    background-color: WhiteSmoke;
+}
+.navigation-row {
+    cursor: pointer;
+}
+.navigation-row p {
+    transform: translate(0, 25%);
+}
+
+/* Projects table CSS */
+.table-flush tbody tr td {
+    padding: 0;
+}
+.project-thumb-wrapper {
+    position: relative;
+}
+.project-thumb {
+    width: 250px;
+    cursor: pointer;
+    -webkit-filter: grayscale(40%);
+}
+.project-text {
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 26px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.img-blurred {
+    -webkit-filter: brightness(65%) grayscale(0%) blur(1px);
+}
+
+/* Footer CSS */
+#footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+}
+#footer p {
+    transform: translate(0, 15px);
+}
