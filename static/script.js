@@ -1,6 +1,7 @@
 // static/script.js
 // Make data structure for prof_pic URLs
 var mugshots = [
+    '/static/img/Chimney_mugshot.jpg',
     '/static/img/favicon.jpg',
     '/static/img/Killington_mugshot.jpg',
     '/static/img/Niagara_mugshot.jpg',
@@ -33,14 +34,22 @@ function put_scene(elem) {
         $('title').text('A Project of ADB');
     }
 }
-
 // Puts home scene on stage
-function show_home() {
+function put_home() {
     put_scene(document.getElementById('home_entry'));
+}
+
+function swap_mug() {
+    var index = Math.floor(Math.random() * mugshots.length);
+    var new_src = mugshots[index];
+    $('#mugshot').attr('src', new_src);
 }
 
 // Runs when page is done loading
 $(function() {
+    // Randomize starting mugshot
+    swap_mug();
+
     // Add new tab link functionality. This is necessary because of the markdown parsing
     $('a').attr('target', '_blank');
 
@@ -66,11 +75,6 @@ $(function() {
         }
     );
 
-    // Add prof-pic swap functionality
-    $('#mugshot').click(function() {
-        var index = Math.floor(Math.random() * mugshots.length);
-        var new_src = mugshots[index];
-        mugshots[index] = $(this).attr('src');
-        $(this).attr('src', new_src);
-    });
+    // Add mugshot swap functionality
+    $('#mugshot').click(swap_mug);
 });

@@ -5,7 +5,6 @@ import os
 
 # Start application
 app = Flask(__name__)
-app.debug = True
 
 # Scene data structure
 standard_scenes = ['home', 'projects', 'resume']
