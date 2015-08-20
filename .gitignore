@@ -1,5 +1,3 @@
 venv
 *.pyc
-instance/
-TODO.md
 Procfile

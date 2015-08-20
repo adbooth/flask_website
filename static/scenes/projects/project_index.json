@@ -55,6 +55,12 @@
             "link": ""
         },
         {
+            "key": "RPi",
+            "thumb": "RPi.jpg",
+            "caption": "nginx RPi server",
+            "link": "https://realpython.com/blog/python/kickstarting-flask-on-ubuntu-setup-and-deployment/"
+        },
+        {
             "key": "oldsite",
             "thumb": "oldsite.jpg",
             "caption": "PHP Website",
