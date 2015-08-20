@@ -25,10 +25,10 @@
             "link": ""
         },
         {
-            "key": "ALU",
-            "thumb": "ALU.jpg",
-            "caption": "Verilog ALU",
-            "link": "https://github.com/adbooth/CSE341_ALU_project"
+            "key": "clock",
+            "thumb": "planetary_clock.jpg",
+            "caption": "Planet System Clock",
+            "link": "/clock"
         },
         {
             "key": "drone",
@@ -43,6 +43,12 @@
             "link": "https://github.com/adbooth/CSE341_MIPS_division_project"
         },
         {
+            "key": "ALU",
+            "thumb": "ALU.jpg",
+            "caption": "Verilog ALU",
+            "link": "https://github.com/adbooth/CSE341_ALU_project"
+        },
+        {
             "key": "blinds",
             "thumb": "blinds.jpg",
             "caption": "Automated Blinds",
@@ -51,7 +57,7 @@
         {
             "key": "oldsite",
             "thumb": "oldsite.jpg",
-            "caption": "My Old Website",
+            "caption": "PHP Website",
             "link": "https://github.com/adbooth/ADBs_pi_website"
         }
     ]

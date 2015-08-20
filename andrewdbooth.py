@@ -5,6 +5,7 @@ import os
 
 # Start application
 app = Flask(__name__)
+app.debug = True
 
 # Scene data structure
 standard_scenes = ['home', 'projects', 'resume']
@@ -42,3 +43,7 @@ def theater():
 
     # Render page
     return render_template('theater.html')
+
+@app.route('/clock')
+def clock():
+    return render_template('clock.html')

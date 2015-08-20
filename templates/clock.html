@@ -1,0 +1,40 @@
+{# templates/theater.html #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS  -->
+    <style>
+        html {
+            background-color: black;
+        }
+        canvas {
+            border-radius: 0px;
+            padding: 0;
+            margin: auto;
+            display: block;
+            width: 700px;
+            height: 700px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="{{url_for('.static', filename='lib/processing.min.js')}}" defer></script>
+
+    <!-- Custom -->
+    <link rel="shortcut icon" href="{{url_for('.static', filename='img/favicon.jpg')}}">
+    <title>[Planet] System Clock</title>
+</head>
+<body>
+    <canvas data-processing-sources="{{url_for('.static', filename='scenes/clock/Andrew_Booth_Midterm_Assign_vA.pde')}} {{url_for('.static', filename='scenes/clock/class_Planet.pde')}}"></canvas>
+</body>
+</html>

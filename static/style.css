@@ -6,18 +6,8 @@ html {
 }
 body {
     font-family: "Lucida Console", Monaco, monospace;
-}
-@media (min-width: 768px) {
-    body {
-        padding-top: 50px;
-        margin-bottom: 50px;
-    }
-}
-@media (max-width: 768px) {
-    body {
-        padding-top: 15px;
-        margin-bottom: 15px;
-    }
+    padding-top: 50px;
+    margin-bottom: 50px;
 }
 #theater {
     max-width: 800px;

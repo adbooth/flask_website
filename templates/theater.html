@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="{{url_for('.static', filename='lib/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{url_for('.static', filename='style.css')}}">
 
+    <!-- JavaScript -->
+    <script type="text/javascript" src="{{url_for('.static', filename='lib/jquery.min.js')}}" defer></script>
+    <script type="text/javascript" src="{{url_for('.static', filename='lib/bootstrap.min.js')}}" defer></script>
+    <script type="text/javascript" src="{{url_for('.static', filename='script.js')}}" defer></script>
+
     <!-- Custom -->
     <link rel="shortcut icon" href="{{url_for('.static', filename='img/favicon.jpg')}}">
     <title>The Home of ADB</title>
@@ -35,8 +40,8 @@
                             <td><p>{{scene|title}}</p></td>
                         </tr>
                     {%- endfor %}
-                </table>
-            </div>
+                </table><!-- closes scene list -->
+            </div><!-- closes pillar -->
 
             <!-- stage -->
             <div class="col-sm-8">
@@ -45,22 +50,15 @@
                         {{markup}}
                     </div>
                 {%- endfor %}
-            </div>
-
-        </div>
+            </div><!-- closes stage -->
+        </div><!-- closes row -->
 
         <!-- footer -->
         <footer class="container hidden-xs hidden-sm">
             <p class="text-muted">
                 Designed by <a href="https://twitter.com/broothie">ADB</a>, powered by <a href="https://www.raspberrypi.org/">RPi</a>/<a href="http://nginx.org/en/">nginx</a>/<a href="http://flask.pocoo.org/">Flask</a>/<a href="http://getbootstrap.com/">Bootstrap</a>
             </p>
-        </footer>
-
-    </div>
-
-    <!-- JavaScript -->
-    <script type="text/javascript" src="{{url_for('.static', filename='lib/jquery.min.js')}}"></script>
-    <script type="text/javascript" src="{{url_for('.static', filename='lib/bootstrap.min.js')}}"></script>
-    <script type="text/javascript" src="{{url_for('.static', filename='script.js')}}"></script>
+        </footer><!-- closes footer -->
+    </div><!-- closes theater -->
 </body>
 </html>
