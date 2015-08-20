@@ -1,31 +1,42 @@
+// static/script.js
 // Make data structure for prof_pic URLs
 var mugshots = [
     '/static/img/favicon.jpg',
-    '/static/img/Killington_prof_pic.jpg',
-    '/static/img/Niagara_prof_pic.jpg',
-    // '/static/img/Graduation_prof_pic.jpg',
-    '/static/img/Oozefest_prof_pic.jpg'
+    '/static/img/Killington_mugshot.jpg',
+    // '/static/img/Niagara_mugshot.jpg',
+    // '/static/img/Graduation_mugshot.jpg',
+    '/static/img/Oozefest_mugshot.jpg'
 ]
 
+// Returns capitalized string
+function capitalize(s) {
+    return s[0].toUpperCase() + s.slice(1);
+}
+
+// Puts corresponding scene on stage
+function put_scene(elem) {
+    // Hide all scenes, then unhide corresponding scene
+    $('.scene').addClass('hidden');
+    var target = $(elem).attr('id').split('_')[0];
+    $('#' + target + '_scene').removeClass('hidden');
+
+    // Deselect all entries, then select corresponding entry
+    $('.entry').removeClass('bg-selected');
+    $(elem).addClass('bg-selected');
+
+    // Update page title
+    $('title').text('The ' + capitalize(target) + ' of ADB');
+}
+
+// Puts home scene on stage
+function show_home() {
+    put_scene(document.getElementById('home_entry'));
+}
+
+// Runs when page is done loading
 $(function() {
-    // Start page on about page
-    show_home();
-
-    // Add new tab link functionality
+    // Add new tab link functionality. This is necessary because of the markdown parsing
     $('a').attr('target', '_blank');
-
-    // Add navigation functionality to rows
-    $('.navigation-row').attr('onclick', 'show_page(this)');
-
-    // Add prof-pic swap functionality
-    $('#mugshot').click(function() {
-        var index = Math.floor(Math.random() * mugshots.length);
-        var new_src = mugshots[index];
-        mugshots[index] = $(this).attr('src');
-        $(this).attr('src', new_src);
-    });
-
-    $('#nameplate').click(show_home);
 
     // Add project image hover functionality
     $('.project-thumb').hover(
@@ -38,7 +49,7 @@ $(function() {
             $(this).removeClass('img-blurred');
         }
     );
-    $('.project-text').hover(
+    $('.project-caption').hover(
         function() {
             $(this).removeClass('hidden');
             $(this).siblings().addClass('img-blurred');
@@ -48,33 +59,12 @@ $(function() {
             $(this).addClass('hidden');
         }
     );
+
+    // Add prof-pic swap functionality
+    $('#mugshot').click(function() {
+        var index = Math.floor(Math.random() * mugshots.length);
+        var new_src = mugshots[index];
+        mugshots[index] = $(this).attr('src');
+        $(this).attr('src', new_src);
+    });
 });
-
-function show_page(elem) {
-    // Hide all pages
-    $('.navigation-row').removeClass('bg-selected');
-    $('.page-div').addClass('hidden');
-
-    // Show make corresponding page
-    $(elem).addClass('bg-selected');
-    var target = $(elem).attr('id').replace('_navigation', '');
-    $('#' + target).removeClass('hidden');
-    $('title').text('The ' + capitalize(target) + ' of ADB');
-}
-
-function show_home() {
-    show_page(document.getElementById('home_navigation'));
-}
-
-function show_stage(elem) {
-    $('.navigation-row').removeClass('bg-selected');
-    $('.page-div').addClass('hidden');
-
-    var target = $(elem).attr('id').replace('_image', '');
-    $('#' + target).removeClass('hidden');
-    $('title').text('A Project of ADB');
-}
-
-function capitalize(s) {
-    return s[0].toUpperCase() + s.slice(1);
-}

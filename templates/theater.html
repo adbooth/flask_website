@@ -1,0 +1,64 @@
+{# templates/theater.html #}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="{{url_for('.static', filename='lib/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('.static', filename='style.css')}}">
+
+    <!-- Custom -->
+    <link rel="shortcut icon" href="{{url_for('.static', filename='img/favicon.jpg')}}">
+    <title>The Home of ADB</title>
+</head>
+<body>
+    <!-- theater -->
+    <div id="theater" class="container">
+        <div class="row">
+            <!-- pillar -->
+            <div class="col-sm-4">
+                <!-- mugshot -->
+                <img id="mugshot" src="{{url_for('.static', filename='img/Chimney_mugshot.jpg')}}" class="img-responsive">
+                <!-- nameplate -->
+                <div id="nameplate" onclick="show_home()">
+                    <h2>Andrew Booth</h2>
+                </div>
+                <!-- scene list -->
+                <table id="scene_list" class="table table-hover table-condensed table-borderless">
+                    {% for scene in config.SCENE_LIST -%}
+                        <tr id="{{scene}}_entry" class="entry{% if not loop.index0 %} bg-selected{% endif %}" onclick="put_scene(this)">
+                            <td><p>{{scene|title}}</p></td>
+                        </tr>
+                    {%- endfor %}
+                </table>
+            </div>
+
+            <!-- Stage -->
+            <div class="col-sm-8">
+                {% for scene, markup in g.scenes.iteritems() -%}
+                    <div id="{{scene}}_scene" class="scene{% if loop.index0 %} hidden{% endif %}">
+                        {{markup}}
+                    </div>
+                {%- endfor %}
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="container">
+            <p class="text-muted">
+                <span class="hidden-xs hidden-sm">Designed by <a href="https://twitter.com/broothie">ADB</a>,</span> powered by <a href="https://www.raspberrypi.org/">RPi</a>/<a href="http://nginx.org/en/">nginx</a>/<a href="http://flask.pocoo.org/">Flask</a>/<a href="http://getbootstrap.com/">Bootstrap</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="{{url_for('.static', filename='lib/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('.static', filename='lib/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('.static', filename='script.js')}}"></script>
+</body>
+</html>

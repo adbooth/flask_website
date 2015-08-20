@@ -1,9 +1,9 @@
+/* static/style.css */
 /* Global CSS */
 html {
     position: relative;
     min-height: 100%;
 }
-
 body {
     font-family: "Lucida Console", Monaco, monospace;
     padding-top: 50px;
@@ -32,10 +32,10 @@ body {
 .bg-selected {
     background-color: WhiteSmoke;
 }
-.navigation-row {
+.entry {
     cursor: pointer;
 }
-.navigation-row p {
+.entry p {
     transform: translate(0, 25%);
 }
 
@@ -43,15 +43,15 @@ body {
 .table-flush tbody tr td {
     padding: 0;
 }
-.project-thumb-wrapper {
+.project-cell {
     position: relative;
 }
 .project-thumb {
-    width: 250px;
+    width: 200px;
     cursor: pointer;
     -webkit-filter: grayscale(40%);
 }
-.project-text {
+.project-caption {
     cursor: pointer;
     z-index: 100;
     position: absolute;
@@ -67,11 +67,11 @@ body {
 }
 
 /* Footer CSS */
-#footer {
+footer {
     position: absolute;
     bottom: 0;
     height: 50px;
 }
-#footer p {
+footer p {
     transform: translate(0, 15px);
 }

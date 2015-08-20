@@ -1,19 +1,15 @@
-{# andrewdbooth/templates/projects.html #}
+{# templates/projects.html #}
 
 <table class="table table-borderless table-flush">
-    {% for item in content.projects %}
-        {% if loop.index0 % 3 == 0 %}<tr>{% endif %}
-        <td id="{{item.name}}_project_image" class="project-thumb-wrapper"{% if not item.link %} onclick="show_stage(this)" {% endif %}>
-            {% if item.link %}
-                <a href="{{item.link}}">
-            {% endif %}
-                <img src="{{url_for('.static', filename='img/thumbs/' ~ item.name ~ '.jpg')}}" class="img-responsive project-thumb">
-                <p class='project-text hidden'>{{item.caption}}</p>
-            {% if item.link %}
+    <tr>
+        {% for project in g.project_index -%}
+            <td class="project-cell">
+                <a id="{{project.key}}_link" {% if project.link %}href="{{project.link}}"{% else %}onclick="put_scene(this)"{% endif %}>
+                <img src="{{url_for('.static', filename='scenes/projects/thumbs/' ~ project.thumb)}}" class="img-responsive project-thumb">
+                <p class="hidden-xs hidden-sm project-caption hidden">{{project.caption}}</p>
                 </a>
-            {% endif %}
-        </td>
-        {% if loop.index0-2 % 3 == 0 %}</tr>{% endif %}
-    {% endfor %}
+            </td>
+            {%- if not loop.last and loop.index % 3 == 0 -%}</tr><tr>{%- endif -%}
+        {%- endfor %}
     </tr>
 </table>
