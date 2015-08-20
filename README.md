@@ -4,13 +4,12 @@ Personal website hosted on a Raspberry Pi at my [parents'] home.
 
 URL: http://www.andrewdbooth.me
 
-### Application Architecture
 #### Application Stack
 - [Flask](http://flask.pocoo.org/): web application framework
 - [Jinja2](http://jinja.pocoo.org/): html templating syntax
 - [JQuery](http://jquery.com/): obligatory JavaScript library
 - [Bootstrap](http://getbootstrap.com/): webpage styling libraries
-- [Gunicorn](http://gunicorn.org/): application software
+- [Gunicorn](http://gunicorn.org/): application server
 
 #### Network Stack
 - [Raspberry Pi](https://www.raspberrypi.org/): credit-card sized computer. Useful for anything/everything
