@@ -1,5 +1,4 @@
 {# templates/theater.html #}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +19,7 @@
     <!-- theater -->
     <div id="theater" class="container">
         <div class="row">
+
             <!-- pillar -->
             <div class="col-sm-4">
                 <!-- mugshot -->
@@ -30,7 +30,7 @@
                 </div>
                 <!-- scene list -->
                 <table id="scene_list" class="table table-hover table-condensed table-borderless">
-                    {% for scene in config.SCENE_LIST -%}
+                    {% for scene in g.standard_scenes -%}
                         <tr id="{{scene}}_entry" class="entry{% if not loop.index0 %} bg-selected{% endif %}" onclick="put_scene(this)">
                             <td><p>{{scene|title}}</p></td>
                         </tr>
@@ -38,7 +38,7 @@
                 </table>
             </div>
 
-            <!-- Stage -->
+            <!-- stage -->
             <div class="col-sm-8">
                 {% for scene, markup in g.scenes.iteritems() -%}
                     <div id="{{scene}}_scene" class="scene{% if loop.index0 %} hidden{% endif %}">
@@ -46,14 +46,16 @@
                     </div>
                 {%- endfor %}
             </div>
+
         </div>
 
-        <!-- Footer -->
-        <footer class="container">
+        <!-- footer -->
+        <footer class="container hidden-xs hidden-sm">
             <p class="text-muted">
-                <span class="hidden-xs hidden-sm">Designed by <a href="https://twitter.com/broothie">ADB</a>,</span> powered by <a href="https://www.raspberrypi.org/">RPi</a>/<a href="http://nginx.org/en/">nginx</a>/<a href="http://flask.pocoo.org/">Flask</a>/<a href="http://getbootstrap.com/">Bootstrap</a>
+                Designed by <a href="https://twitter.com/broothie">ADB</a>, powered by <a href="https://www.raspberrypi.org/">RPi</a>/<a href="http://nginx.org/en/">nginx</a>/<a href="http://flask.pocoo.org/">Flask</a>/<a href="http://getbootstrap.com/">Bootstrap</a>
             </p>
         </footer>
+
     </div>
 
     <!-- JavaScript -->

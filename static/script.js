@@ -3,8 +3,7 @@
 var mugshots = [
     '/static/img/favicon.jpg',
     '/static/img/Killington_mugshot.jpg',
-    // '/static/img/Niagara_mugshot.jpg',
-    // '/static/img/Graduation_mugshot.jpg',
+    '/static/img/Niagara_mugshot.jpg',
     '/static/img/Oozefest_mugshot.jpg'
 ]
 
@@ -15,17 +14,24 @@ function capitalize(s) {
 
 // Puts corresponding scene on stage
 function put_scene(elem) {
-    // Hide all scenes, then unhide corresponding scene
+    // Remove all traces of previous scene
     $('.scene').addClass('hidden');
-    var target = $(elem).attr('id').split('_')[0];
-    $('#' + target + '_scene').removeClass('hidden');
-
-    // Deselect all entries, then select corresponding entry
     $('.entry').removeClass('bg-selected');
+    // Get target scene data
+    var keywords = $(elem).attr('id').split('_');
+    var scene = keywords[0];
+    // Show target scene
+    $('#' + scene + '_scene').removeClass('hidden');
     $(elem).addClass('bg-selected');
 
-    // Update page title
-    $('title').text('The ' + capitalize(target) + ' of ADB');
+    // Determine scene type
+    if (keywords[1] == 'entry') {
+        // Standard scene - update title to scene name
+        $('title').text('The ' + capitalize(scene) + ' of ADB');
+    } else {
+        // Project scene
+        $('title').text('A Project of ADB');
+    }
 }
 
 // Puts home scene on stage
