@@ -16,7 +16,7 @@ paths['scenes'] = os.path.join(paths['root'], 'static/scenes')
 for scene in standard_scenes:
     paths[scene] = os.path.join(paths['scenes'], scene)
 
-# Serve page
+# Serve theater
 @app.route('/')
 def theater():
     # Store scene list on global object
@@ -43,6 +43,7 @@ def theater():
     # Render page
     return render_template('theater.html')
 
+# Serve clock scene
 @app.route('/clock')
 def clock():
     return render_template('clock.html')

@@ -2,8 +2,8 @@
 // Make data structure for prof_pic URLs
 var mugshots = [
     '/static/img/Chimney_mugshot.jpg',
-    '/static/img/favicon.jpg',
     '/static/img/Killington_mugshot.jpg',
+    '/static/img/favicon.jpg',
     '/static/img/Niagara_mugshot.jpg',
     '/static/img/Oozefest_mugshot.jpg'
 ]
@@ -40,15 +40,18 @@ function put_home() {
 }
 
 function swap_mug() {
-    var index = Math.floor(Math.random() * mugshots.length);
-    var new_src = mugshots[index];
+    var random_index = Math.floor(Math.random() * mugshots.length);
+    var new_src = mugshots[random_index];
+    mugshots[random_index] = $('#mugshot').attr('src');
     $('#mugshot').attr('src', new_src);
 }
 
 // Runs when page is done loading
 $(function() {
-    // Randomize starting mugshot
-    swap_mug();
+    // Start with random mugshot of the first two
+    var random_index = Math.floor(Math.random() * 2);
+    $('#mugshot').attr('src', mugshots[random_index]);
+    mugshots = mugshots.splice(random_index);
 
     // Add new tab link functionality. This is necessary because of the markdown parsing
     $('a').attr('target', '_blank');
