@@ -12,7 +12,7 @@ URL: http://www.andrewdbooth.me
 - [Gunicorn](http://gunicorn.org/): application server
 
 #### Network Stack
-- [Raspberry Pi](https://www.raspberrypi.org/): credit-card sized computer. Useful for anything/everything
+- [Raspberry Pi](https://www.raspberrypi.org/): credit card sized computer. Useful for anything/everything
 - [nginx](http://nginx.org/): lightning fast http server
 - [iwantmyname](iwantmyname.com): domain name registrar
 - [no-ip](http://www.noip.com/): dynamic DNS tracking service

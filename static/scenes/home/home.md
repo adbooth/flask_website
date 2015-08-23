@@ -1,8 +1,8 @@
 ### About Andrew
 
-Twenty-two year old currently working as a controls engineering intern at [Corning Inc.](https://www.corning.com/)'s Environmental Technologies plant in Erwin, NY.
+Twenty-two year old currently finishing up a bachelor's degree in [Computer Engineering](http://www.cse.buffalo.edu/) at [SUNY Buffalo](http://www.buffalo.edu/).
 
-Come August I'll be back at [SUNY Buffalo](http://www.buffalo.edu/) to finish up my last undergrad year in their [Computer Engineering program](http://www.cse.buffalo.edu/).
+Fresh off a summer internship at [Corning Inc.](https://www.corning.com/) working on controls engineering at their Environmental Technologies plant in Erwin, NY.
 
 I spend my days kayaking the mighty [Chemung](https://www.google.com/maps/@42.0965219,-76.9227392,1317m/data=!3m1!1e3), skiing [HV](http://www.holidayvalley.com/) & [QKA](http://www.keukalake.com/), and biking along the [Erie Canal](https://www.canalsidebuffalo.com/things-to-do/2015-08/?filter=health-fitness).
 
