@@ -4,7 +4,7 @@
         {% for project in g.project_index -%}
             <td class="project-cell">
                 <a id="{{project.key}}_link" {% if project.link %}href="{{project.link}}"{% else %}onclick="put_scene(this)"{% endif %}>
-                <img src="{{url_for('.static', filename='scenes/projects/thumbs/' ~ project.thumb)}}" class="img-responsive project-thumb">
+                <img src="{{url_for('.static', filename='scenes/projects/thumbs/' ~ project.thumb)}}" class="img-responsive project-thumb"/>
                 <p class="hidden-xs hidden-sm project-caption hidden">{{project.caption}}</p>
                 </a>
             </td>
