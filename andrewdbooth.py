@@ -8,7 +8,6 @@ import os
 
 # Start application
 app = Flask(__name__)
-app.debug = True
 
 # Scene data structure
 STANDARD_SCENES = ['home', 'projects', 'resume']
