@@ -56,11 +56,9 @@ def clock():
 def edustats():
     """ Serves .edu stats view from URL '/unipagestats' """
     g.schools = {}
-    # g.schoolstring = open(os.path.join(PATHS['scenes'], 'unipagestats/schools.jl')).read()
     with open(os.path.join(PATHS['scenes'], 'unipagestats/schools.jl')) as school_file:
         for line in school_file.readlines():
             school = json.loads(line)
             g.schools[school['name']] = school
-            # g.schools.append(line)
 
     return render_template('unipagestats.html')
