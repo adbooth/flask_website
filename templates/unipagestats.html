@@ -1,0 +1,34 @@
+{# templates/theater.html #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Custom -->
+    <link rel="shortcut icon" href="{{url_for('.static', filename='img/favicon.jpg')}}">
+    <title>University Homepage Technologies</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Tag Count</th>
+                <th>Top Nest</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for name, school in g.schools.iteritems() %}
+                <tr>
+                    <td><a href="{{school.url}}" target="_blank">{{school.title}}</a></td>
+                    <td>{{school.tagcount}}</td>
+                    <td>{{school.topnest}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
