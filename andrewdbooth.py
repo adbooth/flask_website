@@ -51,7 +51,7 @@ def clock():
     """ Serves the clock view from URL '/clock' """
     return render_template('clock.html')
 
-@app.route('/unipagestats')
+@app.route('/unihomepagestats')
 def edustats():
     """ Serves .edu stats view from URL '/unipagestats' """
     g.schools = {}

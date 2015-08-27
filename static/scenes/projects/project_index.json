@@ -1,6 +1,24 @@
 {
     "project_index":[
         {
+            "key": "unipagestats",
+            "thumb": "unipagestats.jpg",
+            "caption": ".edu Scraper",
+            "link": "/unihomepagestats"
+        },
+        {
+            "key": "welding",
+            "thumb": "welding.jpg",
+            "caption": "Trailer Weld",
+            "link": ""
+        },
+        {
+            "key": "site",
+            "thumb": "site.jpg",
+            "caption": "This Website",
+            "link": "https://github.com/adbooth/flask_website"
+        },
+        {
             "key": "ARM",
             "thumb": "ARM.jpg",
             "caption": "ARM Bomberman",
@@ -11,18 +29,6 @@
             "thumb": "SMBS.jpg",
             "caption": "Saturday Morning Breakfast Survival",
             "link": "https://github.com/adbooth/Saturday_Morning_Breakfast_Survival"
-        },
-        {
-            "key": "site",
-            "thumb": "site.jpg",
-            "caption": "This Website",
-            "link": "https://github.com/adbooth/flask_website"
-        },
-        {
-            "key": "welding",
-            "thumb": "welding.jpg",
-            "caption": "Trailer Weld",
-            "link": ""
         },
         {
             "key": "clock",
