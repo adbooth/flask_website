@@ -19,6 +19,12 @@
             "link": "https://github.com/adbooth/flask_website"
         },
         {
+            "key": "ARM",
+            "thumb": "ARM.jpg",
+            "caption": "ARM Bomberman",
+            "link": "https://github.com/adbooth/ARM_Bomberman"
+        },
+        {
             "key": "SMBS",
             "thumb": "SMBS.jpg",
             "caption": "Saturday Morning Breakfast Survival",
@@ -29,6 +35,24 @@
             "thumb": "planetary_clock.jpg",
             "caption": "Planet System Clock",
             "link": "/clock"
+        },
+        {
+            "key": "drone",
+            "thumb": "drone.jpg",
+            "caption": "Drone Simulation",
+            "link": "https://github.com/adbooth/CSE321_Drone_Control_and_Deployment"
+        },
+        {
+            "key": "MIPS",
+            "thumb": "MIPS.jpg",
+            "caption": "MIPS Divison Algorithm",
+            "link": "https://github.com/adbooth/CSE341_MIPS_division_project"
+        },
+        {
+            "key": "ALU",
+            "thumb": "ALU.jpg",
+            "caption": "Verilog ALU",
+            "link": "https://github.com/adbooth/CSE341_ALU_project"
         },
         {
             "key": "blinds",
