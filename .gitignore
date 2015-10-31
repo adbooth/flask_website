@@ -1,5 +1,4 @@
-venv
+adb
 *.pyc
-Procfile
 schools.jl
-TODO.md
+Procfile
