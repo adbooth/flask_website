@@ -1,12 +1,6 @@
 {
     "project_index":[
         {
-            "key": "unipagestats",
-            "thumb": "unipagestats.jpg",
-            "caption": ".edu Scraper",
-            "link": "/unihomepagestats"
-        },
-        {
             "key": "welding",
             "thumb": "welding.jpg",
             "caption": "Trailer Weld",
