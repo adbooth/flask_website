@@ -1,12 +1,6 @@
 {
     "project_index":[
         {
-            "key": "welding",
-            "thumb": "welding.jpg",
-            "caption": "Trailer Weld",
-            "link": ""
-        },
-        {
             "key": "site",
             "thumb": "site.jpg",
             "caption": "This Website",
