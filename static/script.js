@@ -48,6 +48,7 @@ function swap_mug() {
 
 // Runs when page is done loading
 $(function() {
+    put_home();
     // Start with random mugshot of the first two
     var random_index = Math.floor(Math.random() * 2);
     $('#mugshot').attr('src', mugshots[random_index]);
