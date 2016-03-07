@@ -1,6 +1,12 @@
 {
     "project_index":[
         {
+            "key": "FPU",
+            "thumb": "FPU.jpg",
+            "caption": "Floating Point ALU",
+            "link": "https://docs.google.com/presentation/d/1AhVWDQFGKNWE8Y9aaH6uae46x5s06jaKPu2G6apj1mQ/edit?usp=sharing"
+        },
+        {
             "key": "site",
             "thumb": "site.jpg",
             "caption": "This Website",
