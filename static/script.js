@@ -6,7 +6,7 @@ var mugshots = [
     '/static/img/favicon.jpg',
     '/static/img/Niagara_mugshot.jpg',
     '/static/img/Oozefest_mugshot.jpg'
-]
+];
 
 // Returns capitalized string
 function capitalize(s) {
@@ -26,12 +26,15 @@ function put_scene(elem) {
     $(elem).addClass('bg-selected');
 
     // Determine scene type
+    cap_scene = capitalize(scene);
     if (keywords[1] == 'entry') {
         // Standard scene - update title to scene name
-        $('title').text('The ' + capitalize(scene) + ' of ADB');
+        $('title').text('The ' + cap_scene + ' of ADB');
+        document.location.hash = scene;
     } else {
         // Project scene
         $('title').text('A Project of ADB');
+        document.location.hash = scene;
     }
 }
 // Puts home scene on stage
@@ -48,7 +51,15 @@ function swap_mug() {
 
 // Runs when page is done loading
 $(function() {
-    put_home();
+    // Implement anchor hash
+    var hash = document.location.hash.replace('#', '');
+    var scene_elem = document.getElementById(hash + '_entry');
+    if (hash && scene_elem) {
+        put_scene(scene_elem);
+    } else {
+        put_home();
+    }
+
     // Start with random mugshot of the first two
     var random_index = Math.floor(Math.random() * 2);
     $('#mugshot').attr('src', mugshots[random_index]);
