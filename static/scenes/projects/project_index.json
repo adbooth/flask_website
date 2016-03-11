@@ -8,7 +8,7 @@
         },
         {
             "key": "site",
-            "thumb": "site.jpg",
+            "thumb": "favicon.jpg",
             "caption": "This Website",
             "link": "https://github.com/adbooth/flask_website"
         },
@@ -25,16 +25,29 @@
             "link": "/clock"
         },
         {
-            "key": "blinds",
-            "thumb": "blinds.jpg",
-            "caption": "Automated Blinds",
-            "link": ""
+            "key": "ARM",
+            "thumb": "ARM.jpg",
+            "caption": "ARM Bomberman",
+            "link": "https://github.com/adbooth/ARM-Bomberman"
         },
         {
             "key": "RPi",
             "thumb": "RPi.jpg",
             "caption": "nginx RPi server",
             "link": "https://realpython.com/blog/python/kickstarting-flask-on-ubuntu-setup-and-deployment/"
+        },
+        {
+            "key": "ALU",
+            "thumb": "ALU.jpg",
+            "caption": "Verilog ALU",
+            "link": "https://github.com/adbooth/Verilog-ALU"
+        },
+
+        {
+            "key": "blinds",
+            "thumb": "blinds.jpg",
+            "caption": "Automated Blinds",
+            "link": ""
         },
         {
             "key": "oldsite",
