@@ -29,11 +29,11 @@ function put_scene(elem) {
     cap_scene = capitalize(scene);
     if (keywords[1] == 'entry') {
         // Standard scene - update title to scene name
-        $('title').text('The ' + cap_scene + ' of ADB');
+        $('title').text('Andrew Booth - ' + cap_scene);
         document.location.hash = scene;
     } else {
         // Project scene
-        $('title').text('A Project of ADB');
+        $('title').text('Andrew Booth - Projects');
         document.location.hash = scene;
     }
 }
