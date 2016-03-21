@@ -26,15 +26,14 @@ function put_scene(elem) {
     $(elem).addClass('bg-selected');
 
     // Determine scene type
-    cap_scene = capitalize(scene);
     if (keywords[1] == 'entry') {
         // Standard scene - update title to scene name
-        $('title').text('Andrew Booth - ' + cap_scene);
+        $('title').text('Andrew Booth - ' + capitalize(scene));
         document.location.hash = scene;
     } else {
         // Project scene
         $('title').text('Andrew Booth - Projects');
-        document.location.hash = scene;
+        document.location.hash = '';
     }
 }
 // Puts home scene on stage
