@@ -1,6 +1,6 @@
 ### About Andrew
 
-Twenty-two year old currently finishing up a bachelor's degree in [Computer Engineering](http://www.cse.buffalo.edu/) at [SUNY Buffalo](http://www.buffalo.edu/).
+Twenty-three year old currently finishing up a bachelor's degree in [Computer Engineering](http://www.cse.buffalo.edu/) at [SUNY Buffalo](http://www.buffalo.edu/).
 
 Fresh off a summer internship at [Corning Inc.](https://www.corning.com/) working on controls engineering at their Environmental Technologies plant in Erwin, NY.
 
