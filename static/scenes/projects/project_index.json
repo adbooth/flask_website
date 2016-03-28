@@ -1,6 +1,12 @@
 {
     "project_index":[
         {
+            "key": "chalet",
+            "thumb": "chalet.jpg",
+            "caption": "Chalet in the Woods Rentals",
+            "link": "http://chaletinthewoods.net/"
+        },
+        {
             "key": "FPU",
             "thumb": "FPU.jpg",
             "caption": "Floating Point ALU",
