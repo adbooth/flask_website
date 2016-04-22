@@ -50,14 +50,3 @@ def theater():
 def clock():
     """ Serves the clock view from URL '/clock' """
     return render_template('clock.html')
-
-# @app.route('/unihomepagestats')
-# def edustats():
-#     """ Serves .edu stats view from URL '/unipagestats' """
-#     g.schools = {}
-#     with open(os.path.join(PATHS['scenes'], 'unipagestats/schools.jl')) as school_file:
-#         for line in school_file.readlines():
-#             school = json.loads(line)
-#             g.schools[school['name']] = school
-#
-#     return render_template('unipagestats.html')
