@@ -48,7 +48,12 @@
             "caption": "Verilog ALU",
             "link": "https://github.com/adbooth/Verilog-ALU"
         },
-
+        {
+            "key": "onesmart",
+            "thumb": "onesmart.jpg",
+            "caption": "ONESmart",
+            "link": ""
+        },
         {
             "key": "blinds",
             "thumb": "blinds.jpg",
