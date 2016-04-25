@@ -9,6 +9,10 @@ body {
     padding-top: 50px;
     margin-bottom: 50px;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 #theater {
     max-width: 800px;
 }
