@@ -1,6 +1,12 @@
 {
     "project_index":[
         {
+            "key": "scrumtious",
+            "thumb": "scrumtious.jpg",
+            "caption": "scrumtious",
+            "link": "http://scrumtio.us/"
+        },
+        {
             "key": "chalet",
             "thumb": "chalet.jpg",
             "caption": "Chalet in the Woods Rentals",
