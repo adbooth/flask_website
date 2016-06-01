@@ -1,4 +1,4 @@
-### Natural Light Alarm Clock
+# Natural Light Alarm Clock
 ###### By Seth Karas & Andrew Booth
 ---
 #### Why/What?

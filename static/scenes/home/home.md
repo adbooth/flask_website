@@ -1,14 +1,12 @@
-### About Andrew
+# About Andrew
 
-Twenty-three year old currently finishing up a bachelor's degree in [Computer Engineering](http://www.cse.buffalo.edu/) at [SUNY Buffalo](http://www.buffalo.edu/).
+Twenty-three year old starting up a position as a computer engineer at [BAE Systems](http://www.baesystems.com/) in Endicott, NY. Fresh off finishing up a bachelor's degree in [Computer Engineering](http://www.cse.buffalo.edu/) at [SUNY Buffalo](http://www.buffalo.edu/).
 
-Fresh off a summer internship at [Corning Inc.](https://www.corning.com/) working on controls engineering at their Environmental Technologies plant in Erwin, NY.
-
-I spend my days kayaking the mighty [Chemung](https://www.google.com/maps/@42.0965219,-76.9227392,1317m/data=!3m1!1e3), skiing [HV](http://www.holidayvalley.com/) & [QKA](http://www.keukalake.com/), and biking along the [Erie Canal](https://www.canalsidebuffalo.com/things-to-do/2015-08/?filter=health-fitness).
+I spend my days kayaking the mighty [Chemung](https://en.wikipedia.org/wiki/Chemung_River), skiing [K1](http://www.killington.com/site/index.html) & [QKA](http://www.keukalake.com/), and biking along the [Erie Canal](https://www.canalsidebuffalo.com).
 
 ### Contact
 
-email: [personal](mailto:boothandrewd@gmail.com) or [school](mailto:adbooth@buffalo.edu)
+email: [boothandrewd](mailto:boothandrewd@gmail.com)
 
 github: [adbooth](https://github.com/adbooth)
 

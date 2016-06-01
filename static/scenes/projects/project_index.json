@@ -1,16 +1,16 @@
 {
     "project_index":[
         {
-            "key": "commencement",
-            "thumb": "commencement.jpg",
-            "caption": "QR Scanner",
-            "link": "https://github.com/adbooth/Commencement-Scanner"
-        },
-        {
             "key": "scrumtious",
             "thumb": "scrumtious.png",
             "caption": "scrumtious",
             "link": "http://scrumtio.us/"
+        },
+        {
+            "key": "commencement",
+            "thumb": "commencement.jpg",
+            "caption": "QR Scanner",
+            "link": ""
         },
         {
             "key": "chalet",

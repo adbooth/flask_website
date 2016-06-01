@@ -1,4 +1,4 @@
-### ONESmart
+# ONESmart
 ---
 ONESmart is a web application built for [Corning Inc.](http://www.corning.com/) designed to integrate with a proprietary proof of concept system for showcasing the speed of new networking technology.
 
