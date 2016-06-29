@@ -6,12 +6,9 @@ I spend my days kayaking the mighty [Chemung](https://en.wikipedia.org/wiki/Chem
 
 ### Contact
 
-email: [boothandrewd](mailto:boothandrewd@gmail.com)
-
-github: [adbooth](https://github.com/adbooth)
-
-linkedin: [boothad](https://www.linkedin.com/in/boothad)
-
-facebook: [Andrew.D.Booth](https://www.facebook.com/Andrew.D.Booth)
-
-twitter: [@broothie](https://twitter.com/broothie)
+- [Email](mailto:boothandrewd@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/boothandrewd)
+- [GitHub](https://github.com/boothandrewd)
+- [Facebook](https://www.facebook.com/boothandrewd)
+- [Twitter](https://twitter.com/broothie)
+- [Instagram](https://www.instagram.com/broothie/)

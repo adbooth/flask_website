@@ -34,13 +34,13 @@
             "key": "site",
             "thumb": "favicon.jpg",
             "caption": "andrew d booth .me",
-            "link": "https://github.com/adbooth/flask_website"
+            "link": "https://github.com/boothandrewd/flask_website"
         },
         {
             "key": "SMBS",
             "thumb": "SMBS.jpg",
             "caption": "Saturday Morning Breakfast Survival",
-            "link": "https://github.com/adbooth/Saturday_Morning_Breakfast_Survival"
+            "link": "https://github.com/boothandrewd/Saturday_Morning_Breakfast_Survival"
         },
         {
             "key": "clock",
@@ -52,7 +52,7 @@
             "key": "ARM",
             "thumb": "ARM.jpg",
             "caption": "ARM Bomberman",
-            "link": "https://github.com/adbooth/ARM-Bomberman"
+            "link": "https://github.com/boothandrewd/ARM-Bomberman"
         },
         {
             "key": "RPi",
@@ -64,7 +64,7 @@
             "key": "ALU",
             "thumb": "ALU.jpg",
             "caption": "Verilog ALU",
-            "link": "https://github.com/adbooth/Verilog-ALU"
+            "link": "https://github.com/boothandrewd/Verilog-ALU"
         },
         {
             "key": "onesmart",
@@ -82,7 +82,7 @@
             "key": "oldsite",
             "thumb": "oldsite.jpg",
             "caption": "PHP Website",
-            "link": "https://github.com/adbooth/ADBs_pi_website"
+            "link": "https://github.com/boothandrewd/ADBs_pi_website"
         }
     ]
 }
