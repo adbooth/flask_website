@@ -1,10 +1,16 @@
 {
     "project_index":[
         {
+            "key": "dewspics",
+            "thumb": "dewspics.png",
+            "caption": "Dew's Pics",
+            "link": "https://dewspics.com"
+        },
+        {
             "key": "scrumtious",
             "thumb": "scrumtious.png",
             "caption": "scrumtious",
-            "link": "https://scrumtio.us/"
+            "link": "https://scrumtio.us"
         },
         {
             "key": "commencement",
